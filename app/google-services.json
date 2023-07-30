@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "250512707725",
+    "firebase_url": "https://login-b90ea-default-rtdb.firebaseio.com",
+    "project_id": "login-b90ea",
+    "storage_bucket": "login-b90ea.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:250512707725:android:b938dfb99f561b1e9292c4",
+        "android_client_info": {
+          "package_name": "com.example.firebaseloginfullsystem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "250512707725-9e63g22nvrh4qne6r7bimia55rhnh31a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9FVMyorgAwsburrwgzZbAAPuhsfa2AU8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "250512707725-9e63g22nvrh4qne6r7bimia55rhnh31a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:250512707725:android:191f9317c54e80b59292c4",
+        "android_client_info": {
+          "package_name": "com.example.travelapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "250512707725-9e63g22nvrh4qne6r7bimia55rhnh31a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9FVMyorgAwsburrwgzZbAAPuhsfa2AU8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "250512707725-9e63g22nvrh4qne6r7bimia55rhnh31a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

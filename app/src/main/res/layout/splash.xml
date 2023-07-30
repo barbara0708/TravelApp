@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/option"
+    tools:context=".SplashActivity">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="400dp"
+        android:layout_height="290dp"
+        app:lottie_loop="true"
+        app:lottie_speed="2"
+        app:lottie_autoPlay="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="180dp"
+        app:lottie_fileName="van.json" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Get ready for \n new adventures..."
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:gravity="center"/>
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Android/TravelApp/app/src/main/res/drawable/rounded_edge.xml" value="0.3828125" />
+        <entry key="..\:/Android/TravelApp/app/src/main/res/layout/activity_login.xml" value="0.36666666666666664" />
+        <entry key="..\:/Android/TravelApp/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/Android/TravelApp/app/src/main/res/layout/activity_registration.xml" value="0.36666666666666664" />
+        <entry key="..\:/Android/TravelApp/app/src/main/res/layout/activity_travel_tips.xml" value="0.36666666666666664" />
+        <entry key="..\:/TravelApp/app/src/main/res/drawable/account.xml" value="0.22135416666666666" />
+        <entry key="..\:/TravelApp/app/src/main/res/drawable/btn_corners.xml" value="0.22135416666666666" />
+        <entry key="..\:/TravelApp/app/src/main/res/font/adamina.xml" value="0.23541666666666666" />
+        <entry key="..\:/TravelApp/app/src/main/res/font/lato_black.xml" value="0.23541666666666666" />
+        <entry key="..\:/TravelApp/app/src/main/res/layout/activity_checklist.xml" value="0.36666666666666664" />
+        <entry key="..\:/TravelApp/app/src/main/res/layout/activity_city.xml" value="0.36666666666666664" />
+        <entry key="..\:/TravelApp/app/src/main/res/layout/activity_forgot_password.xml" value="0.33" />
+        <entry key="..\:/TravelApp/app/src/main/res/layout/activity_full_screen.xml" value="0.20520833333333333" />
+        <entry key="..\:/TravelApp/app/src/main/res/layout/activity_login.xml" value="0.20520833333333333" />
+        <entry key="..\:/TravelApp/app/src/main/res/layout/activity_main.xml" value="0.27982954545454547" />
+        <entry key="..\:/TravelApp/app/src/main/res/layout/activity_map.xml" value="0.36666666666666664" />
+        <entry key="..\:/TravelApp/app/src/main/res/layout/activity_profile.xml" value="0.33" />
+        <entry key="..\:/TravelApp/app/src/main/res/layout/activity_registration.xml" value="0.36666666666666664" />
+        <entry key="..\:/TravelApp/app/src/main/res/layout/fragment_travel_tips.xml" value="0.36666666666666664" />
+        <entry key="..\:/TravelApp/app/src/main/res/layout/header.xml" value="0.36666666666666664" />
+        <entry key="..\:/TravelApp/app/src/main/res/layout/item_option.xml" value="0.36666666666666664" />
+        <entry key="..\:/TravelApp/app/src/main/res/layout/new_task.xml" value="0.36666666666666664" />
+        <entry key="..\:/TravelApp/app/src/main/res/layout/splash.xml" value="0.20520833333333333" />
+        <entry key="..\:/TravelApp/app/src/main/res/menu/menu_main.xml" value="0.36666666666666664" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
