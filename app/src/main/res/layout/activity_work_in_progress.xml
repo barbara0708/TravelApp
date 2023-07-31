@@ -26,11 +26,33 @@
     <com.airbnb.lottie.LottieAnimationView
         android:layout_width="400dp"
         android:layout_height="290dp"
+        android:id="@+id/animation"
         app:lottie_loop="true"
-        app:lottie_speed="2"
         app:lottie_autoPlay="true"
         android:layout_gravity="center"
-        android:layout_marginTop="180dp"
+        android:layout_marginTop="70dp"
         app:lottie_fileName="man_computer.json"/>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_medium"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Working on it..."
+        android:layout_marginTop="20dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="26sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="We apologize, but this page is currently unavailable. Our team is actively working on resolving the issue, and it will be back up and running soon! Thank you for your patience."
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="normal" />
 </LinearLayout>
