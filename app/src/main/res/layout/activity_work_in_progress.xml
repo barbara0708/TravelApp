@@ -7,9 +7,30 @@
     android:orientation="vertical"
     tools:context=".WorkInProgressActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="Hello! We're currently working on this page yet. Stay tuned!"/>
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/imgMainMenu"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"
+            android:src="@drawable/arrow_black"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    </LinearLayout>
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="400dp"
+        android:layout_height="290dp"
+        app:lottie_loop="true"
+        app:lottie_speed="2"
+        app:lottie_autoPlay="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="180dp"
+        app:lottie_fileName="man_computer.json"/>
+
 </LinearLayout>

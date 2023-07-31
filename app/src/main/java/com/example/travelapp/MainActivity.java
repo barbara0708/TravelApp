@@ -17,6 +17,7 @@ package com.example.travelapp;
         import android.content.Intent;
         import android.net.Uri;
         import android.os.Bundle;
+        import android.os.Handler;
         import android.provider.Settings;
         import android.view.Menu;
         import android.view.MenuItem;
@@ -97,11 +98,15 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                         startActivity(new Intent(getApplicationContext(),Gallery.class));
                         break;
                     case "Hotels":
-                        open("https://www.booking.com/index.en-gb.html?label=gen173nr-1DCAEoggI46AdICVgEaLYBiAEBmAEJuAEXyAEM2AED6AEBiAIBqAIDuALepqiUBsACAdICJDcxYWQxMTI5LTZiMjYtNGRkNi04YzFkLTJmZTUyNGY1MDA2ZdgCBOACAQ&sid=af3941b80c45bf74183eec8db165f1bc&keep_landing=1&sb_price_type=total&");
+                        open("https://www.booking.com/country/de.html?aid=1610684;label=de-rHE7KXrebQfxHKE2myBhVwS380966224289:pl:ta:p1:p2:ac:ap:neg:fi:tikwd-299925943839:lp9061070:li:dec:dm:ppccp=UmFuZG9tSVYkc2RlIyh9YfqnDqqG8nt10AsofPfvtt0;ws=&gad=1&gclid=CjwKCAjwt52mBhB5EiwA05YKo6FvgNEGHPtHbO43vcql6J_kanjbquErxuML3EzoLiyGzXI_rAS1zxoC8noQAvD_BwE");
                         break;
                     case "Travel Tips":
                         startActivity(new Intent(getApplicationContext(),TravelTips.class));
                         break;
+                    case "Food":
+                        open("https://www.tripadvisor.com/Restaurants-g187275-Germany.html");
+                        break;
+
                 }
             }
         }));
@@ -181,12 +186,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 email.putExtra(Intent.EXTRA_TEXT, "Hello! I have some questions about...");
                 email.setType("message/rfc822");
                 startActivity(Intent.createChooser(email, "Choose an Email client :"));
-                try {
-                    wait(20*1000);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-                openDialog();
+                final Handler handler = new Handler();
+                handler.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        openDialog();
+                    }
+                }, 2000);
                 break;
             case R.id.nav_info:
                 break;
