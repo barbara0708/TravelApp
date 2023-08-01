@@ -109,29 +109,6 @@
             android:inputType="phone"
             android:minHeight="48dp"
             tools:ignore="SpeakableTextPresentCheck" />
-        <TextView
-            android:id="@+id/tv2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="25dp"
-            android:layout_marginRight="25dp"
-            android:layout_marginBottom="10dp"
-            android:fontFamily="sans-serif-condensed-light"
-            android:text="Password"
-            android:textColor="#000000"
-            android:textSize="24sp" />
-        <EditText
-            android:id="@+id/password"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="25dp"
-            android:layout_marginRight="25dp"
-            android:layout_marginBottom="10dp"
-            android:ems="10"
-            android:hint="Your password"
-            android:inputType="phone"
-            android:minHeight="48dp"
-            tools:ignore="SpeakableTextPresentCheck"/>
 
 
         <Button

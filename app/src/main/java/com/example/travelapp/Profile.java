@@ -33,7 +33,7 @@ public class Profile extends AppCompatActivity implements View.OnClickListener {
     CircleImageView image_profile;
     ImageView arrow;
     public static Uri uri;
-    EditText fName,fEmail,fNumber, fPassword;
+    EditText fName,fEmail,fNumber;
     Button btnChangeData;
     public static final int PICK_IMAGE = 1;
     private String userID;
@@ -45,7 +45,6 @@ public class Profile extends AppCompatActivity implements View.OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
-        fPassword=findViewById(R.id.password);
         image_profile=findViewById(R.id.image_profile);
         btnChangeData=findViewById(R.id.btnChangeData);
         arrow=findViewById(R.id.arrow);
@@ -79,7 +78,6 @@ public class Profile extends AppCompatActivity implements View.OnClickListener {
                     fName.setText(name);
                     fEmail.setText(email);
                     fNumber.setText(number);
-                    fPassword.setText(password);
 
                 }
             }
@@ -124,7 +122,6 @@ public class Profile extends AppCompatActivity implements View.OnClickListener {
         String newName=fName.getText().toString().trim();
         String newEmail=fEmail.getText().toString().trim();
         String newNumber=fNumber.getText().toString().trim();
-        String newPassword=fPassword.getText().toString().trim();
         if(newName.isEmpty()){
             fName.setError("Name is required");
             fName.requestFocus();
@@ -162,48 +159,14 @@ public class Profile extends AppCompatActivity implements View.OnClickListener {
                                             }
                                         }
                                     });
-                            user.updatePassword(newPassword)
-                                    .addOnCompleteListener(new OnCompleteListener<Void>() {
-                                        @Override
-                                        public void onComplete(@NonNull Task<Void> task) {
-                                            Toast.makeText(getApplicationContext(), "User password updated", Toast.LENGTH_SHORT).show();
-                                        }
-                                    });
 
                         }
                     });
         }
-        if(!password.equals(newPassword)){
-            AuthCredential credential=EmailAuthProvider.getCredential(newEmail,password);
-            user.reauthenticate(credential)
-                    .addOnCompleteListener(new OnCompleteListener<Void>() {
-                        @Override
-                        public void onComplete(@NonNull Task<Void> task) {
-                            if(task.isSuccessful()){
-                                user.updatePassword(newPassword)
-                                        .addOnCompleteListener(new OnCompleteListener<Void>() {
-                                            @Override
-                                            public void onComplete(@NonNull Task<Void> task) {
-                                                if(task.isSuccessful()){
-                                                    Toast.makeText(getApplicationContext(), "Password updated", Toast.LENGTH_SHORT).show();
-                                                }else{
-                                                    Toast.makeText(getApplicationContext(), "Error password not updated", Toast.LENGTH_SHORT).show();
-                                                }
-
-                                            }
-                                        });
-                            }else {
-                                Toast.makeText(getApplicationContext(), "Error auth failed", Toast.LENGTH_SHORT).show();
-                            }
-                        }
-                    });
-        }
-            //user.reauthenticate(credential)
 
         boolean nameBool=reference.child(userID).child("name").setValue(newName).isComplete();
         boolean emailBool=reference.child(userID).child("email").setValue(newEmail).isSuccessful();
         boolean numberBool=reference.child(userID).child("number").setValue(newNumber).isSuccessful();
-        reference.child(userID).child("password").setValue(newPassword);
         if(!nameBool&&!emailBool&&!numberBool){
             Toast.makeText(getApplicationContext(), "Data has been saved successfully", Toast.LENGTH_SHORT).show();
             startActivity(new Intent(getApplicationContext(),MainActivity.class));

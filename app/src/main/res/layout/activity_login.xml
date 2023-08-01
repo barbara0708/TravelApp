@@ -40,8 +40,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:background="@drawable/rounded_edge">
+        android:background="@drawable/rounded_edge"
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/textView5"
@@ -51,10 +51,10 @@
             android:layout_marginTop="20dp"
             android:layout_marginRight="25dp"
             android:layout_marginBottom="10dp"
-            android:textColor="#000000"
-            android:textSize="24sp"
             android:fontFamily="sans-serif-condensed-light"
-            android:text="Email" />
+            android:text="Email"
+            android:textColor="#000000"
+            android:textSize="24sp" />
 
         <EditText
             android:id="@+id/etLogEmail"
@@ -77,9 +77,9 @@
             android:layout_marginRight="25dp"
             android:layout_marginBottom="10dp"
             android:fontFamily="sans-serif-condensed-light"
+            android:text="Password"
             android:textColor="#000000"
-            android:textSize="24sp"
-            android:text="Password" />
+            android:textSize="24sp" />
 
 
         <EditText
@@ -87,12 +87,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="25dp"
-            android:layout_marginTop="20dp"
             android:layout_marginRight="25dp"
             android:layout_marginBottom="10dp"
             android:ems="10"
-            android:inputType="textPassword"
             android:hint="Your password"
+            android:inputType="textPassword"
             android:minHeight="48dp" />
 
         <TextView
@@ -106,16 +105,18 @@
             android:textSize="16sp"
             android:textStyle="bold" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Login"
-            android:textColor="@color/white"
-            android:id="@+id/btnLogin"
             android:layout_marginLeft="60dp"
             android:layout_marginRight="60dp"
             android:backgroundTint="#22333B"
-            android:background="@drawable/btn_corners"/>
+            app:cornerRadius="15dip"
+            android:text="Login"
+            android:textSize="18dp"
+            />
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -125,10 +126,10 @@
                 android:id="@+id/textView11"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="85dp"
+                android:layout_marginLeft="55dp"
                 android:layout_marginTop="20dp"
                 android:text="Don't have an account?"
-                android:textSize="16sp" />
+                android:textSize="19sp" />
 
             <TextView
                 android:id="@+id/tvReg"
@@ -139,7 +140,7 @@
                 android:clickable="true"
                 android:soundEffectsEnabled="false"
                 android:text="Sign-up"
-                android:textSize="16sp"
+                android:textSize="19sp"
                 android:textStyle="bold"
                 tools:ignore="TouchTargetSizeCheck" />
         </LinearLayout>
