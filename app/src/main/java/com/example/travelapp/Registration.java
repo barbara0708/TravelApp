@@ -137,13 +137,14 @@ public class Registration extends AppCompatActivity implements View.OnClickListe
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
                             User user=new User(fullName,number,emailAddress,password,gender);
-                            FirebaseDatabase.getInstance().getReferenceFromUrl("https://login-b90ea-default-rtdb.firebaseio.com/")
+                            FirebaseDatabase.getInstance().getReferenceFromUrl("https://travel-app-e4d67-default-rtdb.firebaseio.com/")
                                     .child(FirebaseAuth.getInstance().getCurrentUser().getUid())
                                     .setValue(user).addOnCompleteListener(new OnCompleteListener<Void>() {
                                 @Override
                                 public void onComplete(@NonNull Task<Void> task) {
                                     if(task.isSuccessful()){
                                         Toast.makeText(getApplicationContext(), "Registration successful!", Toast.LENGTH_SHORT).show();
+                                        startActivity(new Intent(Registration.this,Login.class));
                                     }else {
                                         Toast.makeText(getApplicationContext(), "Registration is failed!", Toast.LENGTH_SHORT).show();
                                     }
