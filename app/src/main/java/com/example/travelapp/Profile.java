@@ -59,7 +59,7 @@ public class Profile extends AppCompatActivity implements View.OnClickListener {
             image_profile.setImageURI(uri);
         }
         user=FirebaseAuth.getInstance().getCurrentUser();
-        reference= FirebaseDatabase.getInstance().getReferenceFromUrl("https://recipeapp-acb49-default-rtdb.firebaseio.com");
+        reference= FirebaseDatabase.getInstance().getReferenceFromUrl("https://travel-app-e4d67-default-rtdb.firebaseio.com/");
         userID=user.getUid();
         reference.child(userID).addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
