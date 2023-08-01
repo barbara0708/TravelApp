@@ -1,34 +1,42 @@
 {
   "project_info": {
-    "project_number": "250512707725",
-    "firebase_url": "https://login-b90ea-default-rtdb.firebaseio.com",
-    "project_id": "login-b90ea",
-    "storage_bucket": "login-b90ea.appspot.com"
+    "project_number": "649449339482",
+    "firebase_url": "https://recipeapp-acb49-default-rtdb.firebaseio.com",
+    "project_id": "recipeapp-acb49",
+    "storage_bucket": "recipeapp-acb49.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:250512707725:android:b938dfb99f561b1e9292c4",
+        "mobilesdk_app_id": "1:649449339482:android:64641e4810dbcbb51ef663",
         "android_client_info": {
-          "package_name": "com.example.firebaseloginfullsystem"
+          "package_name": "com.example.restaurantpos"
         }
       },
       "oauth_client": [
         {
-          "client_id": "250512707725-9e63g22nvrh4qne6r7bimia55rhnh31a.apps.googleusercontent.com",
+          "client_id": "649449339482-9r2vsnhvdagbnqi9ndq04l4ic3alu53b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.restaurantpos",
+            "certificate_hash": "b5636dfe869d7d5d6d90a1af1b1f8da4c979b6b0"
+          }
+        },
+        {
+          "client_id": "649449339482-i6j2eu814a6o9tos29us7mjdn2c97htg.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyA9FVMyorgAwsburrwgzZbAAPuhsfa2AU8"
+          "current_key": "AIzaSyA6c4DADcGvtufw851ZFcrDn0i96ffmJDY"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "250512707725-9e63g22nvrh4qne6r7bimia55rhnh31a.apps.googleusercontent.com",
+              "client_id": "649449339482-i6j2eu814a6o9tos29us7mjdn2c97htg.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
@@ -37,27 +45,27 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:250512707725:android:191f9317c54e80b59292c4",
+        "mobilesdk_app_id": "1:649449339482:android:de450f1691893e5b1ef663",
         "android_client_info": {
           "package_name": "com.example.travelapp"
         }
       },
       "oauth_client": [
         {
-          "client_id": "250512707725-9e63g22nvrh4qne6r7bimia55rhnh31a.apps.googleusercontent.com",
+          "client_id": "649449339482-i6j2eu814a6o9tos29us7mjdn2c97htg.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyA9FVMyorgAwsburrwgzZbAAPuhsfa2AU8"
+          "current_key": "AIzaSyA6c4DADcGvtufw851ZFcrDn0i96ffmJDY"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "250512707725-9e63g22nvrh4qne6r7bimia55rhnh31a.apps.googleusercontent.com",
+              "client_id": "649449339482-i6j2eu814a6o9tos29us7mjdn2c97htg.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
