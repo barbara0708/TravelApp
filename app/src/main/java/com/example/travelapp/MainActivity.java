@@ -137,7 +137,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public void createOptions(){
         options=new ArrayList<>();
         options.add(new Options("Hotels",R.drawable.hotel));
-        options.add(new Options("Liked",R.drawable.favorite_black));
         options.add(new Options("Travel Tips",R.drawable.notes));
         options.add(new Options("Galery",R.drawable.galery));
         options.add(new Options("Food",R.drawable.rest_menu));
