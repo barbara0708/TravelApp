@@ -1,8 +1,10 @@
 package com.example.travelapp;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.ItemTouchHelper;
@@ -19,6 +21,7 @@ public class Checklist extends AppCompatActivity implements DialogCloseListener{
     private RecyclerView taskRecyclerView;
     private ToDoAdapter taskAdapter;
     private FloatingActionButton fab;
+     ImageView imgBack;
 
     private List<ToDoModel>tasks;
     @Override
@@ -28,6 +31,7 @@ public class Checklist extends AppCompatActivity implements DialogCloseListener{
         db=new DatabaseHandler(this);
         db.openDatabase();
 
+        imgBack=findViewById(R.id.imgBack1);
         taskRecyclerView=findViewById(R.id.tasksRecyclerView);
         taskRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         taskAdapter=new ToDoAdapter(db,Checklist.this);
@@ -39,7 +43,12 @@ public class Checklist extends AppCompatActivity implements DialogCloseListener{
         tasks=db.getAllTasks();
         Collections.reverse(tasks);
         taskAdapter.setTasks(tasks);
-
+        imgBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Checklist.this,MainActivity.class));
+            }
+        });
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

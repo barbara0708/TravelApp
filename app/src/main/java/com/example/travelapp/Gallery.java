@@ -28,7 +28,13 @@ public class Gallery extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gallery);
         grid_view=findViewById(R.id.grid_view);
-        imgBack=findViewById(R.id.imgBack);
+        imgBack=findViewById(R.id.imgBack2);
+        imgBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Gallery.this,MainActivity.class));
+            }
+        });
         grid_view.setAdapter(new ImageAdapter(this,imageArray));
         grid_view.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
