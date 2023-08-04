@@ -17,6 +17,7 @@ import java.util.Arrays;
 
 public class Gallery extends AppCompatActivity {
     GridView grid_view;
+    ImageView imgBack;
     ArrayList<Integer> imageArray = new ArrayList < >(Arrays.asList(
             R.drawable.dresden,R.drawable.first_ber,R.drawable.gate_ber,R.drawable.hamburg,
             R.drawable.koln
@@ -27,6 +28,7 @@ public class Gallery extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gallery);
         grid_view=findViewById(R.id.grid_view);
+        imgBack=findViewById(R.id.imgBack);
         grid_view.setAdapter(new ImageAdapter(this,imageArray));
         grid_view.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
