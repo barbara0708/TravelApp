@@ -7,7 +7,7 @@
         android:id="@+id/cvItemView"
         android:layout_width="match_parent"
         android:layout_height="120dp"
-        app:cardBackgroundColor="#fbd6c4"
+        app:cardBackgroundColor="@color/back_grey"
         android:layout_marginRight="13dp"
         app:cardCornerRadius="15dp">
 
