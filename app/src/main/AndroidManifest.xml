@@ -3,6 +3,8 @@
     package="com.example.travelapp" >
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
 
     <application
         android:allowBackup="true"
@@ -55,10 +57,7 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyDGTnrA3fykPQYTxuse93w2k5PJBhhGxkg" />
-        <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyDGTnrA3fykPQYTxuse93w2k5PJBhhGxkg" />
+            android:value="AIzaSyBh13nW1o5kOMZ4dAIbElH2hauHDMgyt1U" />
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
