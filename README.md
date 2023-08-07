@@ -7,7 +7,9 @@
 
 ## Introduction
     Travel Guide is a simple Android application that helps users to plan an unforgettable trip to 
-    many cities in Germany. Here you can find the perfect hotel for your company, interesting attractions and more!
+    many cities in Germany. Here you can find the perfect hotel for your company, interesting 
+    attractions, deliciouse food and more! App allows to create a checklist with destinations 
+    you'd like to visit while traveling and useful maps for every city.
     
 ## Technologies
 * Java 17
@@ -16,15 +18,10 @@
 * Firebase Authentication
 
 ## Illustrations
-|  Homepage         |       Categories |
+|  Homepage         |       Splash  |
 | ------------------ | --------------- |
-|![Home](screenshots/homepage.png)| ![Categories](screenshots/categories.png)|
+|![Home](main.png)| ![Categories](splash.png)|
 
-| Quizzes             |         Results  |
+| City Page             |         Checklist  |
 | ------------------ | --------------- |
-| ![Quizzes](screenshots/quizzes.png) | ![Results](screenshots/result.png) |
-
-| Profile & Progress Page         |         Login |
-| ------------------ | --------------- |
-|![Profile](screenshots/profile.png)| ![Login](screenshots/login.png)|
-
+| ![Quizzes](city.png) | ![Results](checklist.png) |
